@@ -28,7 +28,7 @@ def token():
      capability.allow_client_outgoing(app_sid)
 
   # This allows incoming connections to client (if specified)
-  client = request.values.get('tommy')
+  client = request.values.get('client')
   if client != None:
     capability.allow_client_incoming("tommy")
 
