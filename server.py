@@ -11,7 +11,7 @@ AUTH_TOKEN = 'xxxxxxxxx'
 APP_SID = 'AP34efa660405b206a7807966a56bcc96c'
 
 CALLER_ID = '+19189924742'
-CLIENT = 'jenny'
+CLIENT = 'tommy'
 
 app = Flask(__name__)
 
