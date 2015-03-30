@@ -11,7 +11,7 @@ AUTH_TOKEN = 'xxxxxxxxx'
 APP_SID = 'AP34efa660405b206a7807966a56bcc96c'
 
 CALLER_ID = '+19189924742'
-CLIENT = 'jenny'
+CLIENT = 'Mobile Quickstart'
 
 app = Flask(__name__)
 
@@ -30,7 +30,7 @@ def token():
   # This allows incoming connections to client (if specified)
   client = request.values.get('client')
   if client != None:
-    capability.allow_client_incoming("jenny")
+    capability.allow_client_incoming("Mobile Quickstart")
 
   # This returns a token to use with Twilio based on the account and capabilities defined above
   return capability.generate()
